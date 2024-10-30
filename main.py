@@ -4,15 +4,17 @@ class Point:
         self.__x = x
         self.__y = y
 
-    def __add_points(self, point):
-        x = self.__x + point.x
-        y = self.__y + point.y
+    def __add__(self, point):
+        x = self.__x + point.__x
+        y = self.__y + point.__y
         return Point(x, y)
+    
 
 
 def main():
 
     p1 = Point(3, 4)
     p2 = Point(2, 2)
-    p1.__add_points(p2)
+    p3 = p1 + p2
+    print(p3)
 main()
