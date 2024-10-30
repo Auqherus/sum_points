@@ -9,7 +9,8 @@ class Point:
         y = self.__y + point.__y
         return Point(x, y)
     
-
+    def __str__(self):
+        return f"Point({self.__x}, {self.__y})"
 
 def main():
 
