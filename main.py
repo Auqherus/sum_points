@@ -17,5 +17,5 @@ def main():
     p1 = Point(3, 4)
     p2 = Point(2, 2)
     p3 = p1 + p2
-    print(p3)
+    print(p3) # Point(5, 6)
 main()
